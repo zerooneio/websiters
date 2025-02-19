@@ -114,7 +114,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Tentang Kami<br></h2>
-    <p>ini kata kata motto ditauruh sini</p>
+    <p>Kepuasan Anda Adalah Prioritas Kami</p>
   </div><!-- End Section Title -->
 
   <div class="container">
