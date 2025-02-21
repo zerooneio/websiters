@@ -13,7 +13,10 @@ Route::get('/', [HomeController::class, 'index']) ->name('home.index');
 Route::post('/', [HomeController::class, 'sendwa']) ->name('home.sendwa');
 
 Route::get('/sliders', [SlidersController::class, 'index']) ->name('sliders.index');
-Route::post('/sliders', [SlidersController::class, 'add']) ->name('sliders.add');
+Route::get('/sliders/add', [SlidersController::class, 'add']) ->name('sliders.add');
+Route::post('/sliders', [SlidersController::class, 'savepict']) ->name('sliders.savepict');
+Route::get('/sliders/edit/{id}', [SlidersController::class, 'edit']) ->name('sliders.edit');
+Route::post('/sliders/edit/{id}', [SlidersController::class, 'update']) ->name('sliders.update');
 
 Route::get('/listpoli', [ListPoliController::class, 'index']) ->name('listpoli.index');
 Route::get('/listpoli/add', [ListPoliController::class, 'add']) ->name('listpoli.add');
