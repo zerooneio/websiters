@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ListPoli;
+use App\Models\Sliders;
 use Illuminate\Support\Facades\Redirect;
 
 class HomeController extends Controller
@@ -11,8 +12,9 @@ class HomeController extends Controller
     public function index()
     {
         $polis = ListPoli::all();
+        $sliders = sliders::all();
 
-        return view('page.index', compact('polis'));
+        return view('page.index', compact('polis', 'sliders'));
     }
 
     public function sendwa(Request $request)
