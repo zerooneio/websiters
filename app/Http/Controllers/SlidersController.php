@@ -11,23 +11,30 @@ class SlidersController extends Controller
     {
         $sliders = sliders::all();
 
-        return view('dasboard.sliders', compact('sliders'));
+        return view('dasboard.listsliders', compact('sliders'));
     }
 
-    public function add(Request $request)
+    public function add()
+    {
+        return view('dasboard.sliders');
+    }
+
+    public function savepict(Request $request)
     {
         //  dd($request);
          $validated = $request->validate([
             'judul' => 'required',
             'deskripsi' => 'required',
             'gambar' => 'required',
+            'status_aktif' => 'required',
         ]);
         if ($validated){
             $file = $request->file('gambar');
             sliders::create([
                 'judul' => $request->judul,
                 'deskripsi' => $request->deskripsi,
-                'gambar' => $file->getClientOriginalName()
+                'gambar' => $file->getClientOriginalName(),
+                'status_aktif' => $request->status_aktif
             ]);
             $tujuan_upload = 'data_file';
             $file->move($tujuan_upload,$file->getClientOriginalName());
@@ -58,6 +65,45 @@ class SlidersController extends Controller
             // // isi dengan nama folder tempat kemana file diupload
             // $tujuan_upload = 'data_file';
             // $file->move($tujuan_upload,$file->getClientOriginalName());
+        }
+    }
+
+    public function edit($kd_sliders)
+    {
+        $slider = sliders::find($kd_sliders);
+
+        return view('dasboard.editslider',compact('slider'));
+    }
+
+    public function update(Request $request,$kd_sliders)
+    {
+        //  dd($request);
+        $validated = $request->validate([
+            'judul' => 'required',
+            'deskripsi' => 'required',
+            'status_aktif' => 'required',
+        ]);
+        if ($validated) {
+            $slider = sliders::find($kd_sliders);
+            if (is_null($request->file('gambar'))) {
+                $slider->judul = $request->judul;
+                $slider->deskripsi = $request->deskripsi;
+                $slider->status_aktif = $request->status_aktif;
+                $slider->save();
+                return redirect(route('sliders.index'));
+            }
+            else{
+                $file = $request->file('gambar');
+                $slider->judul = $request->judul;
+                $slider->deskripsi = $request->deskripsi;
+                $slider->gambar = $file->getClientOriginalName();
+                $slider->status_aktif = $request->status_aktif;
+                $slider->save();
+                $tujuan_upload = 'data_file';
+                $file->move($tujuan_upload,$file->getClientOriginalName());
+                return redirect(route('sliders.index'));
+            }
+            
         }
     }
 
