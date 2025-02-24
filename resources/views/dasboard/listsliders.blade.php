@@ -28,7 +28,7 @@
               <img width="400px" src="{{ url('/data_file/'.$slider->gambar) }}" alt="">
             </td>
             <td class="col-md-2">
-              @if ($slider->status_aktif === 'carousel-item')
+              @if ($slider->status_aktif === 'carousel-item active')
                   Utama
               @else
                   Penunjang
