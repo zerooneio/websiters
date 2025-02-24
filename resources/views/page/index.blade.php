@@ -100,7 +100,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Tentang Kami<br></h2>
-    <p>Kepuasan Anda Adalah Prioritas Kami</p>
+    <p>Kepuasan Anda Adalah Prioritas Kami.</p>
   </div><!-- End Section Title -->
 
   <div class="container">
