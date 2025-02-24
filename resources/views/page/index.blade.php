@@ -99,7 +99,7 @@
       <div class="col-xl-10">
         <div class="text-center">
           <h3>Butuh Berobat Tanpa Antri ? Booking Disini</h3>
-          <p>Anda bisa booking registrasi dengan mengunakan WhatsApp, jika belum mempunyai nomor Rekam Medis bisa WA ke nomor Pendaftaran</p>
+          <p>Anda bisa booking registrasi dengan mengunakan WhatsApp, jika belum mempunyai nomor rm bisa wa ke nomor cs</p>
           <a class="cta-btn" href="#appointment">Daftar Sekarang</a>
         </div>
       </div>
@@ -751,76 +751,6 @@
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="img/gallery/gallery-6.jpg"><img src="img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="img/gallery/gallery-7.jpg"><img src="img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
         <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="img/gallery/gallery-8.jpg"><img src="img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-
-</section><!-- /Gallery Section -->
-
-<!-- Gallery Section -->
-<section id="partner" class="gallery section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Kerja Sama</h2>
-    <p>Rumah Sakit Randegansari Husada telah bekerja sama dengan beberapa perusahaan asuransi</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 3000
-          },
-          "slidesPerView": "auto",
-          "centeredSlides": true,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          },
-          "breakpoints": {
-            "320": {
-              "slidesPerView": 1,
-              "spaceBetween": 0
-            },
-            "768": {
-              "slidesPerView": 3,
-              "spaceBetween": 20
-            },
-            "1200": {
-              "slidesPerView": 5,
-              "spaceBetween": 20
-            }
-          }
-        }
-      </script>
-      <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide">
-          <a href="#!"><img class="img-fluid d-block mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/BPJS_Ketenagakerjaan_logo.svg" width="250" height="100"  /></a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#!"><img class="img-fluid d-block mx-auto" src="https://faskes.bpjs-kesehatan.go.id/aplicares/libs/assets/images/bpjs-logo.png" width="250" height="100"  /></a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#!"><img class="img-fluid d-block mx-auto" src="http://1.bp.blogspot.com/-HP5xl3xBxoQ/UjrgP99gg4I/AAAAAAAAPF4/_R1r-wA_t1A/s1600/JASARAHARJA.png"  width="250" height="100" alt="" /></a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#!"><img class="img-fluid d-block mx-auto" src="https://upload.wikimedia.org/wikipedia/id/b/bd/Logo_Mandiri_Inhealth.svg" width="200" height="200" /></a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#!"><img class="img-fluid d-block mx-auto" src="http://rsmardiwaluyo.co.id/wp-content/uploads/2018/12/portfolio_2017-03-15_154310.png" width="150" alt="" /></a>
-				</div>
-				<div class="swiper-slide">
-					<a href="#!"><img class="img-fluid d-block mx-auto" src="https://www.owlexa.com/assets/img/owlexa.png" width="100" height="100" /></a>
-				</div>
-        
       </div>
       <div class="swiper-pagination"></div>
     </div>
