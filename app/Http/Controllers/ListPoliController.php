@@ -32,4 +32,35 @@ class ListPoliController extends Controller
             return redirect(route('listpoli.index'));
         }
     }
+
+    public function edit($kd_poli)
+    {
+        $listpoli = ListPoli::find($kd_poli);
+
+        return view('dasboard.editpoli',compact('listpoli'));
+    }
+
+    public function update(Request $request, $kd_poli)
+    {
+        //  dd($request);
+        $validated = $request->validate([
+            'poli' => 'required',
+        ]);
+
+        if ($validated) {
+            $listpoli = ListPoli::find($kd_poli);
+
+            $listpoli->nama = $request->poli;
+            $listpoli->save();
+
+            return redirect(route('listpoli.index'));
+        }
+    }
+
+    public function delete($id)
+    {
+        $listpoli = ListPoli::destroy($id);
+
+        return redirect(route('listpoli.index'));
+    }
 }

@@ -27,6 +27,7 @@
             <li><a href="#services">Layanan</a></li>
             <li><a href="#departments">Departments</a></li>
             <li><a href="#doctors">Dokter</a></li>
+            <li><a href="#partner">Asuransi</a></li>
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Dropdown 1</a></li>
