@@ -108,4 +108,11 @@ class SlidersController extends Controller
         }
     }
 
+    public function delete($id)
+    {
+        $slider = sliders::destroy($id);
+
+        return redirect(route('sliders.index'));
+    }
+
 }

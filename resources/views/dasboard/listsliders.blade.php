@@ -36,7 +36,7 @@
             </td>
             <td>
                 <a href="{{route('sliders.edit',['id'=>$slider->kd_sliders])}}" class="btn btn-secondary">Edit</a>
-                <form action="#" method="post">
+                <form action="{{route('sliders.delete',['id'=>$slider->kd_sliders])}}" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="_method" value="delete">
                     <input type="submit" value="Delete" class="btn btn-danger">
