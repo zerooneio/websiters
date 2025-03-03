@@ -3,11 +3,10 @@
 
 <div class="container">
   <br><div>
-    <a href="{{route('berita.add')}}" class="btn btn-primary">Tambah Berita</a>
   </div><br>
   <div class="card">
       <div class="card-header">
-        <h3 class="card-title">DataTable with default features</h3>
+        <h3 class="card-title">List Tentang RS</h3>
       </div>
       <!-- /.card-header -->
       <div class="card-body">
@@ -15,24 +14,19 @@
               <thead>
                   <tr>
                     <th scope="row">#</th>
-                    <th>Judul</th>
-                    <th>Tanggal</th>
-                    <th>Deskripsi Singkat</th>
-                    <th>sampul</th>
-                    <th>Aksi</th>
+                    <th>Link</th>
+                    <th>Gambar Sampul</th>
                   </tr>
               </thead>
               <tbody>
-                  @forelse ($beritas as $berita)
+                  @forelse ($about as $tentang)
                   <tr>
                       <th scope="row">{{$loop->index+1}}</th>
-                      <td>{{$berita->judul}}</td>
-                      <td>{{$berita->tanggal}}</td>
-                      <td>{{$berita->deskripsi_singkat}}</td>
-                      <td><img src="{{ url('/berita/'.$berita->gambar) }}" width="200" height="200" alt=""></td>
+                      <td>{{$tentang->linkyoutube}}</td>
+                      <td><img src="{{ url('/about/'.$tentang->gambar) }}" width="200" height="200" alt=""></td>
                       <td>
-                        <a href="{{route('berita.edit',['id'=>$berita->id])}}" class="btn btn-secondary">Edit</a>
-                        <a href="{{route('berita.detail',['id'=>$berita->id])}}" class="btn btn-success">Detail</a>
+                        <a href="#" class="btn btn-secondary">Edit</a>
+                        <a href="#" class="btn btn-success">Detail</a>
                         <form action="#" method="post">
                             {{ csrf_field() }}
                             <input type="hidden" name="_method" value="delete">

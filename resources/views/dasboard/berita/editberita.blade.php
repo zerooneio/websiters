@@ -29,7 +29,12 @@
             <label for="">Deskripsi Singkat</label>
             <input class="form-control" value="{{$beritas->deskripsi_singkat}}" name="deskripsi_singkat" placeholder="Deskripsi Singkat:">
           </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="gambar" id="customFile">
+            <label class="custom-file-label col-md-6" for="customFile">Gambar Sampul</label>
+          </div>
           <div class="form-group">
+            <br><label for="">Isi Berita</label>
               <textarea id="compose-textarea" name="deskripsi" class="form-control" style="height: 300px">
                 {{$beritas->deskripsi}}
               </textarea>
