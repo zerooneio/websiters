@@ -6,15 +6,17 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SlidersController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\TentangkamiController;
+use App\Http\Controllers\JadwaldokterController;
+use App\Http\Controllers\DokterController;
+use App\Http\Controllers\GaleryController;
 
 // Route::get('/', function () {
 //     return view('page/index');
 // });
 
-// halaman utama
+// halaman utamalistpoli
 Route::get('/', [HomeController::class, 'index']) ->name('home.index');
 Route::post('/', [HomeController::class, 'sendwa']) ->name('home.sendwa');
-Route::get('/berita', [BeritaController::class, 'index']) ->name('berita.index');
 Route::get('/tentangkami', [TentangkamiController::class, 'index']) ->name('about.index');
 
 Route::get('/sliders', [SlidersController::class, 'index']) ->name('sliders.index');
@@ -39,5 +41,19 @@ Route::get('/berita/edit/{id}', [BeritaController::class, 'edit']) ->name('berit
 Route::put('/berita/edit/{id}', [BeritaController::class, 'update']) ->name('berita.update');
 
 Route::post('/tentangkami', [TentangkamiController::class, 'add']) ->name('about.add');
-Route::get('/edittentangkami', [TentangkamiController::class, 'edit']) ->name('about.edit');
-Route::post('/edittentangkami', [TentangkamiController::class, 'saveabout']) ->name('about.saveabout');
+Route::post('/addttentangkami', [TentangkamiController::class, 'saveabout']) ->name('about.saveabout');
+Route::get('/edittentangkami/{id}', [TentangkamiController::class, 'edit']) ->name('about.edit');
+Route::post('/edittentangkami/{id}', [TentangkamiController::class, 'update']) ->name('about.update');
+
+Route::get('/jadwaldokter/list', [JadwaldokterController::class, 'index']) ->name('jadwal.index');
+Route::post('/jadwaldokter/list', [JadwaldokterController::class, 'savejadwal']) ->name('jadwal.savejadwal');
+Route::get('/jadwaldokter/edit/{id}', [JadwaldokterController::class, 'edit']) ->name('jadwal.edit');
+Route::post('/jadwaldokter/edit/{id}', [JadwaldokterController::class, 'update']) ->name('jadwal.update');
+
+Route::get('/dokter/list', [DokterController::class, 'index']) ->name('dokter.index');
+Route::get('/dokter/add', [DokterController::class, 'add']) ->name('dokter.add');
+Route::post('/dokter/list', [DokterController::class, 'savedokter']) ->name('dokter.savedokter');
+Route::get('/dokter/edit/{id}', [DokterController::class, 'edit']) ->name('dokter.edit');
+Route::post('/dokter/edit/{id}', [DokterController::class, 'update']) ->name('dokter.update');
+
+Route::get('/galery/list', [GaleryController::class, 'index']) ->name('galery.index');

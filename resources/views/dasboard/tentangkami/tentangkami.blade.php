@@ -25,13 +25,8 @@
                       <td>{{$tentang->linkyoutube}}</td>
                       <td><img src="{{ url('/about/'.$tentang->gambar) }}" width="200" height="200" alt=""></td>
                       <td>
-                        <a href="#" class="btn btn-secondary">Edit</a>
+                        <a href="{{route('about.edit',['id'=>$tentang->id])}}" class="btn btn-secondary">Edit</a>
                         <a href="#" class="btn btn-success">Detail</a>
-                        <form action="#" method="post">
-                            {{ csrf_field() }}
-                            <input type="hidden" name="_method" value="delete">
-                            <input type="submit" value="Delete" class="btn btn-danger">
-                        </form>
                       </td>
                     </tr>
                     @empty

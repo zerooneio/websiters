@@ -7,7 +7,7 @@ use App\Models\Tentangkami;
 
 class TentangkamiController extends Controller
 {
-    public function index()
+    public function index() 
     {
         $about = tentangkami::all();
         return view('dasboard/tentangkami.tentangkami', compact('about'));
@@ -40,9 +40,38 @@ class TentangkamiController extends Controller
         }
     }
 
-    public function edit()
+    public function edit($id)
     {
-        $about = Tentangkami::all();
-        return view('dasboard/tentangkami.edittentang', compact('about'));
+        $about = tentangkami::find($id);
+
+        return view('dasboard/tentangkami.edittentang',compact('about'));
+    }
+
+    public function update(Request $request, $id)
+    { 
+        // dd($request);
+        $validated = $request->validate([
+            'linkyoutube' => 'required',
+            'deskripsi' => 'required',
+        ]);
+        if ($validated){
+            $about = tentangkami::find($id);
+            if (is_null($request->file('gambar'))) {
+                $about->linkyoutube = $request->linkyoutube ;
+                $about->deskripsi = $request->deskripsi ;
+                $about->save();
+                return redirect(route('about.index'));
+            }
+            else{
+                $file = $request->file('gambar');
+                $about->linkyoutube = $request->linkyoutube ;
+                $about->deskripsi = $request->deskripsi ;
+                $about->gambar = $file->getClientOriginalName();
+                $about->save();
+                $tujuan_upload = 'berita';
+                $file->move($tujuan_upload,$file->getClientOriginalName());
+                return redirect(route('about.index'));
+            }
+        }
     }
 }

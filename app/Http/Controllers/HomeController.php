@@ -7,7 +7,10 @@ use App\Models\ListPoli;
 use App\Models\Sliders;
 use App\Models\Berita;
 use App\Models\Tentangkami;
+use App\Models\Dokter;
+use App\Models\Jadwaldokter;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Carbon;
 
 class HomeController extends Controller
 {
@@ -17,8 +20,10 @@ class HomeController extends Controller
         $sliders = sliders::all();
         $about = tentangkami::all();
         $beritas = berita::orderBy('tanggal', 'desc')->limit(5)->get();
-        // dd($beritas);
-        return view('page.index', compact('polis', 'sliders', 'beritas', 'about'));
+        $dokters = dokter::limit(4)->get();
+        $jadwals =  jadwaldokter::where('hari', '=', now()->isoFormat('dddd'))->get();
+        $hariini = Carbon::now()->isoFormat('dddd, D MMM Y');
+        return view('page.index', compact('polis', 'sliders', 'beritas', 'about', 'dokters', 'jadwals', 'hariini'));
     }
 
     public function sendwa(Request $request)
