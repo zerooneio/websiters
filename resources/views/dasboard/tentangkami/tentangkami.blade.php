@@ -2,8 +2,9 @@
 @section('content')
 
 <div class="container">
-  <br><div>
-  </div><br>
+  <div>
+    <a href="{{route('about.add')}}" class="btn btn-primary">Tambah Data Dokter</a>
+  </div> <br>
   <div class="card">
       <div class="card-header">
         <h3 class="card-title">List Tentang RS</h3>

@@ -40,7 +40,8 @@ Route::post('/berita/list', [BeritaController::class, 'saveberita']) ->name('ber
 Route::get('/berita/edit/{id}', [BeritaController::class, 'edit']) ->name('berita.edit');
 Route::put('/berita/edit/{id}', [BeritaController::class, 'update']) ->name('berita.update');
 
-Route::post('/tentangkami', [TentangkamiController::class, 'add']) ->name('about.add');
+Route::get('/tentangkami/list', [TentangkamiController::class, 'index']) ->name('about.index');
+Route::get('/tentangkami/add', [TentangkamiController::class, 'add']) ->name('about.add');
 Route::post('/addttentangkami', [TentangkamiController::class, 'saveabout']) ->name('about.saveabout');
 Route::get('/edittentangkami/{id}', [TentangkamiController::class, 'edit']) ->name('about.edit');
 Route::post('/edittentangkami/{id}', [TentangkamiController::class, 'update']) ->name('about.update');

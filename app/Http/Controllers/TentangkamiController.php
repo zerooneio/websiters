@@ -15,8 +15,7 @@ class TentangkamiController extends Controller
 
     public function add()
     {
-        $about = tentangkami::all();
-        return view('dasboard/tentangkami.addtentangkami', compact('about'));
+        return view('dasboard/tentangkami.addtentangkami');
     }
 
     public function saveabout(Request $request)
