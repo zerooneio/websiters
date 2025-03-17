@@ -7,23 +7,10 @@ use App\Models\Berita;
 
 class BeritaController extends Controller
 {
-    public function index()
-    {
-        $berita = berita::all();
-
-        return view('page.berita', compact('berita'));
-    }
-
-    public function detail($id)
-    {
-        $beritas = berita::find($id);
-
-        return view('page.berita',compact('beritas'));
-    }
 
     public function list()
     {
-        $beritas = berita::all();
+        $beritas = berita::orderBy('tanggal', 'desc')->get();
 
         return view('dasboard/berita.berita', compact('beritas'));
     }
@@ -41,14 +28,19 @@ class BeritaController extends Controller
             'tanggal' => 'required',
             'deskripsi_singkat' => 'required',
             'deskripsi' => 'required',
+            'gambar' => 'required',
         ]);
         if ($validated){
+            $file = $request->file('gambar');
             berita::create([
                 'judul' => $request->judul,
                 'tanggal' => $request->tanggal,
                 'deskripsi_singkat' => $request->deskripsi_singkat,
                 'deskripsi' => $request->deskripsi,
+                'gambar' => $file->getClientOriginalName(),
             ]);
+            $tujuan_upload = 'berita';
+            $file->move($tujuan_upload,$file->getClientOriginalName());
             return redirect(route('berita.list'));
         }
     }
@@ -71,12 +63,26 @@ class BeritaController extends Controller
         ]);
         if ($validated){
             $beritas = berita::find($id);
-            $beritas->judul = $request->judul ;
-            $beritas->tanggal = $request->tanggal ;
-            $beritas->deskripsi_singkat = $request->deskripsi_singkat ;
-            $beritas->deskripsi = $request->deskripsi ;
-            $beritas->save();
-            return redirect(route('berita.list'));
+            if (is_null($request->file('gambar'))) {
+                $beritas->judul = $request->judul ;
+                $beritas->tanggal = $request->tanggal ;
+                $beritas->deskripsi_singkat = $request->deskripsi_singkat ;
+                $beritas->deskripsi = $request->deskripsi ;
+                $beritas->save();
+                return redirect(route('berita.list'));
+            }
+            else{
+                $file = $request->file('gambar');
+                $beritas->judul = $request->judul ;
+                $beritas->tanggal = $request->tanggal ;
+                $beritas->deskripsi_singkat = $request->deskripsi_singkat ;
+                $beritas->deskripsi = $request->deskripsi ;
+                $beritas->gambar = $file->getClientOriginalName();
+                $beritas->save();
+                $tujuan_upload = 'berita';
+                $file->move($tujuan_upload,$file->getClientOriginalName());
+                return redirect(route('berita.list'));
+            }
         }
     }
 

@@ -106,26 +106,16 @@
   <div class="container">
 
     <div class="row gy-4">
+      @forelse ($about as $tentang)
       <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-        <img src="img/about.jpg" class="img-fluid" alt="">
-        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+        <img src="{{ url('/about/'.$tentang->gambar) }}" class="img-fluid" alt="">
+        <a href="{{$tentang->linkyoutube}}" class="glightbox pulsating-play-btn"></a>
       </div>
       <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-        <p class="fst-italic">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-        <ul>
-          <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-          <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-          <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-        </ul>
-        <p>
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-        </p>
+        {!!$tentang->deskripsi!!}
       </div>
+      @empty
+      @endforelse
     </div>
 
   </div>
@@ -185,7 +175,7 @@
 
 </section><!-- /Stats Section -->
 
-<!-- Features Section -->
+{{-- <!-- Features Section -->
 <section id="features" class="features section">
 
   <div class="container">
@@ -234,9 +224,9 @@
 
   </div>
 
-</section><!-- /Features Section -->
+</section><!-- /Features Section --> --}}
 
-<!-- Services Section -->
+{{-- <!-- Services Section -->
 <section id="services" class="services section">
 
   <!-- Section Title -->
@@ -328,7 +318,7 @@
 
   </div>
 
-</section><!-- /Services Section -->
+</section><!-- /Services Section --> --}}
 
 <!-- Appointment Section -->
 <section id="appointment" class="appointment section light-background">
@@ -383,102 +373,36 @@
 </section><!-- /Appointment Section -->
 
 <!-- Tabs Section -->
-<section id="tabs" class="tabs section">
+<section id="jadwaldokter" class="tabs section">
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Departments</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <h2>Jadwal Dokter Hari Ini</h2>
+    <p>{{$hariini}}</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row">
-      <div class="col-lg-3">
-        <ul class="nav nav-tabs flex-column">
-          <li class="nav-item">
-            <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">Cardiology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">Neurology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">Hepatology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">Pediatrics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">Ophthalmologists</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-9 mt-4 mt-lg-0">
-        <div class="tab-content">
-          <div class="tab-pane active show" id="tabs-tab-1">
-            <div class="row">
-              <div class="col-lg-8 details order-2 order-lg-1">
-                <h3>Cardiology</h3>
-                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-              </div>
-              <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="img/departments-1.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tabs-tab-2">
-            <div class="row">
-              <div class="col-lg-8 details order-2 order-lg-1">
-                <h3>Neurology</h3>
-                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-              </div>
-              <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="img/departments-2.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tabs-tab-3">
-            <div class="row">
-              <div class="col-lg-8 details order-2 order-lg-1">
-                <h3>Hepatology</h3>
-                <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-              </div>
-              <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="img/departments-3.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tabs-tab-4">
-            <div class="row">
-              <div class="col-lg-8 details order-2 order-lg-1">
-                <h3>Pediatrics</h3>
-                <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-              </div>
-              <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="img/departments-4.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tabs-tab-5">
-            <div class="row">
-              <div class="col-lg-8 details order-2 order-lg-1">
-                <h3>Ophthalmologists</h3>
-                <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-              </div>
-              <div class="col-lg-4 text-center order-1 order-lg-2">
-                <img src="img/departments-5.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <table id="example1" class="table table-bordered table-striped">
+      <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Poli Tujuan</th>
+            <th>Dokter</th>
+            <th>Jam Praktek</th>
+          </tr>
+      </thead>
+      <tbody>
+        @forelse ($jadwals as $jadwal)
+          <tr>
+            <td>{{$jadwal->hari}}</td>
+            <td>{{$jadwal->poli}}</td>
+            <td>{{$jadwal->dokter}}</td>
+            <td>{{$jadwal->jam}}</td>
+            </tr>
+        @empty
+        @endforelse
+      </tbody>
+  </table>
   </div>
 
 </section><!-- /Tabs Section -->
@@ -488,8 +412,8 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Testimonials</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <h2>Artikel Dan Berita</h2>
+    <p>deskripsi singkat tentang artikel dan berita</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -522,71 +446,19 @@
       </script>
       <div class="swiper-wrapper">
 
+        @forelse ($beritas as $berita)
         <div class="swiper-slide">
           <div class="testimonial-item" "="">
-        <p>
-          <i class=" bi bi-quote quote-icon-left"></i>
-            <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-            <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
+            <img src="{{ url('/berita/'.$berita->gambar) }}" class="img-fluid">
+            <h3><a href="{{route('home.berita_detail',['id'=>$berita->id])}}">{{$berita->judul}}</a></h3>
+            <h4>{{$berita->tanggal}}</h4>
             <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
+                <span>{{$berita->deskripsi_singkat}}</span>
             </p>
-            <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
           </div>
         </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-        </div><!-- End testimonial item -->
-
+        @empty
+        @endforelse
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -608,77 +480,20 @@
 
     <div class="row gy-4">
 
+      @forelse ($dokters as $dokter)
       <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
         <div class="team-member">
           <div class="member-img">
-            <img src="img/doctors/doctors-1.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
+            <img src="{{ url('/dokter/'.$dokter->gambar) }}" class="img-fluid" alt="">
           </div>
           <div class="member-info">
-            <h4>Walter White</h4>
-            <span>Chief Medical Officer</span>
+            <h4>{{$dokter->nama_dokter}}</h4>
+            <span>{{$dokter->poli}}</span>
           </div>
         </div>
-      </div><!-- End Team Member -->
-
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/doctors/doctors-2.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>Sarah Jhonson</h4>
-            <span>Anesthesiologist</span>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/doctors/doctors-3.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>William Anderson</h4>
-            <span>Cardiology</span>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
-      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-        <div class="team-member">
-          <div class="member-img">
-            <img src="img/doctors/doctors-4.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>Amanda Jepson</h4>
-            <span>Neurosurgeon</span>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
+      </div>
+      @empty
+      @endforelse
 
     </div>
 
@@ -686,7 +501,7 @@
 
 </section><!-- /Doctors Section -->
 
-<!-- Gallery Section -->
+{{-- <!-- Gallery Section -->
 <section id="gallery" class="gallery section">
 
   <!-- Section Title -->
@@ -743,7 +558,7 @@
 
   </div>
 
-</section><!-- /Gallery Section -->
+</section><!-- /Gallery Section --> --}}
 
 <!-- Kerjasama Section -->
 <section id="partner" class="gallery section">

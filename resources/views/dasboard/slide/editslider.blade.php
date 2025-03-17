@@ -1,4 +1,4 @@
-@extends('master.app')
+@extends('master/dasboard.app')
 @section('content')
 
 <h1>menu slide bar</h1>

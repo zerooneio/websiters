@@ -11,12 +11,12 @@ class SlidersController extends Controller
     {
         $sliders = sliders::all();
 
-        return view('dasboard.listsliders', compact('sliders'));
+        return view('dasboard/slide.listsliders', compact('sliders'));
     }
 
     public function add()
     {
-        return view('dasboard.sliders');
+        return view('dasboard/slide.sliders');
     }
 
     public function savepict(Request $request)
@@ -72,7 +72,7 @@ class SlidersController extends Controller
     {
         $slider = sliders::find($kd_sliders);
 
-        return view('dasboard.editslider',compact('slider'));
+        return view('dasboard/slide.editslider',compact('slider'));
     }
 
     public function update(Request $request,$kd_sliders)

@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('berita', function (Blueprint $table) {
+        Schema::create('tentangkami', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->date('tanggal');
-            $table->text('deskripsi_singkat');
-            $table->text('deskripsi');
             $table->string('gambar');
+            $table->text('linkyoutube');
+            $table->text('deskripsi');
         });
     }
 

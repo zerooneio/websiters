@@ -5,35 +5,25 @@
 @endsection
 @section('content')
 
-<h1>BERHASIL HALAMAN BERITA</h1>
-
 <div class="col-md-12">
     <div class="card card-primary card-outline">
       <div class="card-header">
-        <h3 class="card-title">Masukkan Berita Informasi Terkini</h3>
+        <h3 class="card-title">Edit Profil RS</h3>
       </div>
-      <form action="{{route('berita.saveberita')}}" method="POST" class="w-full gap-4 flex flex-col" enctype="multipart/form-data">
+      <form action="{{route('about.saveabout')}}" method="POST" class="w-full gap-4 flex flex-col" enctype="multipart/form-data">
         <!-- /.card-header -->
         {{ csrf_field() }}
         <div class="card-body">
-          <div class="form-group">
-            <label for="">Judul</label>
-            <input type="text" class="form-control col-md-6" name="judul" placeholder="JUDUL BERITA">
-          </div>
-          <div class="form-group">
-            <label for="">Tanggal Terbit</label>
-            <input type="date" class="form-control col-md-6" name="tanggal">
-          </div>
-          <div class="form-group">
-            <label for="">Deskripsi Singkat</label>
-            <input class="form-control" name="deskripsi_singkat" placeholder="Deskripsi Singkat:">
-          </div>
           <div class="custom-file">
             <input type="file" class="custom-file-input" name="gambar" id="customFile" required>
-            <label class="custom-file-label col-md-6" for="customFile">Gambar Sampul</label>
+            <label class="custom-file-label col-md-6" for="customFile">Sampul Youtube</label>
           </div>
           <div class="form-group">
-            <br><label for="">Isi Berita</label>
+            <br><label for="">Link Youtube</label>
+            <input type="text" class="form-control col-md-6" name="linkyoutube" >
+          </div>
+          <div class="form-group">
+            <label for="">Deskripsi</label>
               <textarea id="compose-textarea" name="deskripsi" class="form-control" style="height: 300px">
                 
               </textarea>

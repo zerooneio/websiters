@@ -1,4 +1,4 @@
-@extends('master.app')
+@extends('master/dasboard.app')
 @section('content')
 
 <div class="container">

@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="{{ asset('dasboard/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
   @yield('head')
 </head>
-<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
     @include('master/dasboard.navbar')
     @include('master/dasboard.sidebar')

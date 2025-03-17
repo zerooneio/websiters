@@ -1,10 +1,10 @@
-@extends('master.app')
+@extends('master/dasboard.app')
 @section('content')
-<div class="container">
 
-    <div>
-        <a href="{{route('listpoli.add')}}" class="btn btn-block btn-primary">Tambah Dokter</a>
-    </div>
+<div class="container">
+  <div>
+    <a href="{{route('listpoli.add')}}" class="btn btn-primary">Tambah Poli Daftar Online</a>
+  </div> <br>
     <table class="table">
         <caption>List Poliklinik</caption>
         <thead>

@@ -11,12 +11,12 @@ class ListPoliController extends Controller
     {
         $polis = ListPoli::all();
 
-        return view('dasboard.listpoli', compact('polis'));
+        return view('dasboard/polidaftaronline.listpoli', compact('polis'));
     }
 
     public function add()
     {
-        return view('dasboard.addpoli');
+        return view('dasboard/polidaftaronline.addpoli');
     }
 
     public function poli(Request $request)
@@ -37,7 +37,7 @@ class ListPoliController extends Controller
     {
         $listpoli = ListPoli::find($kd_poli);
 
-        return view('dasboard.editpoli',compact('listpoli'));
+        return view('dasboard/polidaftaronline.editpoli',compact('listpoli'));
     }
 
     public function update(Request $request, $kd_poli)
