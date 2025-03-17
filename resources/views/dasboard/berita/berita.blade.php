@@ -32,7 +32,7 @@
                       <td><img src="{{ url('/berita/'.$berita->gambar) }}" width="200" height="200" alt=""></td>
                       <td>
                         <a href="{{route('berita.edit',['id'=>$berita->id])}}" class="btn btn-secondary">Edit</a>
-                        <a href="{{route('berita.detail',['id'=>$berita->id])}}" class="btn btn-success">Detail</a>
+                        <a href="{{route('home.berita_detail',['id'=>$berita->id])}}" class="btn btn-success">Detail</a>
                         <form action="#" method="post">
                             {{ csrf_field() }}
                             <input type="hidden" name="_method" value="delete">

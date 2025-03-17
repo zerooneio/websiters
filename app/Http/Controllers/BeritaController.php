@@ -7,19 +7,6 @@ use App\Models\Berita;
 
 class BeritaController extends Controller
 {
-    public function index()
-    {
-        $berita = berita::all();
-
-        return view('page.berita', compact('berita'));
-    }
-
-    public function detail($id)
-    {
-        $beritas = berita::find($id);
-
-        return view('page.berita',compact('beritas'));
-    }
 
     public function list()
     {

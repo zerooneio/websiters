@@ -24,7 +24,7 @@
           <ul>
             <li><a href="{{route('home.index')}}" class="active">Home</a></li>
             <li><a href="{{route('home.index','#about')}}">Tentang Kami</a></li>
-            <li><a href="{{route('home.index','#services')}}">Layanan</a></li>
+            {{-- <li><a href="{{route('home.index','#services')}}">Layanan</a></li> --}}
             <li><a href="{{route('home.index','#jadwaldokter')}}">Jadwal Poli</a></li>
             <li><a href="{{route('home.index','#doctors')}}">Dokter</a></li>
             <li><a href="{{route('home.index','#contact')}}">Hubungi Kami</a></li>

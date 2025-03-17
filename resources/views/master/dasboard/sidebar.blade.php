@@ -30,6 +30,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="{{route('jadwal.index')}}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>
+                Jadwal Dokter
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="{{route('about.index')}}" class="nav-link">
               <i class="far fa-circle nav-icon"></i>
               <p>

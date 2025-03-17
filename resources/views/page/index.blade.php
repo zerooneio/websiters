@@ -175,7 +175,7 @@
 
 </section><!-- /Stats Section -->
 
-<!-- Features Section -->
+{{-- <!-- Features Section -->
 <section id="features" class="features section">
 
   <div class="container">
@@ -224,9 +224,9 @@
 
   </div>
 
-</section><!-- /Features Section -->
+</section><!-- /Features Section --> --}}
 
-<!-- Services Section -->
+{{-- <!-- Services Section -->
 <section id="services" class="services section">
 
   <!-- Section Title -->
@@ -318,7 +318,7 @@
 
   </div>
 
-</section><!-- /Services Section -->
+</section><!-- /Services Section --> --}}
 
 <!-- Appointment Section -->
 <section id="appointment" class="appointment section light-background">
@@ -450,7 +450,7 @@
         <div class="swiper-slide">
           <div class="testimonial-item" "="">
             <img src="{{ url('/berita/'.$berita->gambar) }}" class="img-fluid">
-            <h3><a href="{{route('berita.detail',['id'=>$berita->id])}}">{{$berita->judul}}</a></h3>
+            <h3><a href="{{route('home.berita_detail',['id'=>$berita->id])}}">{{$berita->judul}}</a></h3>
             <h4>{{$berita->tanggal}}</h4>
             <p>
                 <span>{{$berita->deskripsi_singkat}}</span>
@@ -501,7 +501,7 @@
 
 </section><!-- /Doctors Section -->
 
-<!-- Gallery Section -->
+{{-- <!-- Gallery Section -->
 <section id="gallery" class="gallery section">
 
   <!-- Section Title -->
@@ -558,7 +558,7 @@
 
   </div>
 
-</section><!-- /Gallery Section -->
+</section><!-- /Gallery Section --> --}}
 
 <!-- Kerjasama Section -->
 <section id="partner" class="gallery section">

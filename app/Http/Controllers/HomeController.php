@@ -26,6 +26,13 @@ class HomeController extends Controller
         return view('page.index', compact('polis', 'sliders', 'beritas', 'about', 'dokters', 'jadwals', 'hariini'));
     }
 
+    public function berita_detail($id)
+    {
+        $beritas = berita::find($id);
+
+        return view('page.berita',compact('beritas'));
+    }
+
     public function sendwa(Request $request)
     {
         // dd($request);

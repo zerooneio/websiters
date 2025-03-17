@@ -35,7 +35,7 @@ class TentangkamiController extends Controller
             ]);
             $tujuan_upload = 'about';
             $file->move($tujuan_upload,$file->getClientOriginalName());
-            return redirect(route('about.edit'));
+            return redirect(route('about.index'));
         }
     }
 
