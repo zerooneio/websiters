@@ -67,7 +67,7 @@ class TentangkamiController extends Controller
                 $about->deskripsi = $request->deskripsi ;
                 $about->gambar = $file->getClientOriginalName();
                 $about->save();
-                $tujuan_upload = 'berita';
+                $tujuan_upload = 'about';
                 $file->move($tujuan_upload,$file->getClientOriginalName());
                 return redirect(route('about.index'));
             }

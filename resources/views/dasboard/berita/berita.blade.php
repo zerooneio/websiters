@@ -2,10 +2,12 @@
 @section('content')
 
 <div class="container">
-  <br><div>
+  <br>
+  <div>
     <a href="{{route('berita.add')}}" class="btn btn-primary">Tambah Berita</a>
-  </div><br>
-  <div class="card">
+  </div>
+  <br>
+    <div class="card">
       <div class="card-header">
         <h3 class="card-title">DataTable with default features</h3>
       </div>
@@ -33,7 +35,7 @@
                       <td>
                         <a href="{{route('berita.edit',['id'=>$berita->id])}}" class="btn btn-secondary">Edit</a>
                         <a href="{{route('home.berita_detail',['id'=>$berita->id])}}" class="btn btn-success">Detail</a>
-                        <form action="#" method="post">
+                        <form action="{{route('berita.delete',['id'=>$berita->id])}}" method="post">
                             {{ csrf_field() }}
                             <input type="hidden" name="_method" value="delete">
                             <input type="submit" value="Delete" class="btn btn-danger">

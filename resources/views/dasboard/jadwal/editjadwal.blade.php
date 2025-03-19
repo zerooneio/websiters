@@ -35,8 +35,13 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="">Poli</label>
-                <input type="text" class="form-control" name="poli" value="{{$jadwals->poli}}" required>
+              <label>Nama Poli</label>
+              <select class="form-control select2bs4" name="poli" style="width: 100%;">
+                @forelse ($polis as $poli)
+                <option value="{{$poli->nama}}">{{$poli->nama}}</option>
+                @empty
+                @endforelse
+              </select>
             </div>
             <div class="form-group">
                 <label for="">Dokter</label>
