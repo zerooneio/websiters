@@ -1,5 +1,8 @@
 @extends('master/dasboard.app')
 @section('head')
+<!-- Select2 -->
+<link rel="stylesheet" href="{{ asset('dasboard/plugins/select2/css/select2.min.css') }}">
+<link rel="stylesheet" href="{{ asset('dasboard/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 @endsection
 
 @section('content')
@@ -37,6 +40,7 @@
             <div class="form-group">
               <label>Nama Poli</label>
               <select class="form-control select2bs4" name="poli" style="width: 100%;">
+                <option selected="{{$jadwals->poli}}">{{$jadwals->poli}}</option>
                 @forelse ($polis as $poli)
                 <option value="{{$poli->nama}}">{{$poli->nama}}</option>
                 @empty
@@ -44,8 +48,13 @@
               </select>
             </div>
             <div class="form-group">
-                <label for="">Dokter</label>
-                <input type="text" class="form-control" name="dokter" value="{{$jadwals->dokter}}" required>
+              <label>Nama Dokter</label>
+              <select class="form-control select2bs4" name="dokter" style="width: 100%;">
+                @forelse ($dokters as $dokter)
+                <option value="{{$dokter->nama_dokter}}">{{$dokter->nama_dokter}}</option>
+                @empty
+                @endforelse
+              </select>
             </div>
             <div class="form-group">
                 <label for="">Jam</label>
@@ -62,4 +71,19 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('js')
+<!-- Select2 -->
+<script src="{{ asset('dasboard/plugins/select2/js/select2.full.min.js') }}"></script>
+
+<script>
+    $(function () {  
+      //Initialize Select2 Elements
+      $('.select2bs4').select2({
+        theme: 'bootstrap4'
+      })
+    })
+</script>
+
 @endsection

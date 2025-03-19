@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Jadwaldokter;
 use App\Models\ListPoli;
+use App\Models\Dokter;
 
 class JadwaldokterController extends Controller
 {
@@ -12,8 +13,9 @@ class JadwaldokterController extends Controller
     {
         $jadwals = jadwaldokter::all();
         $polis = ListPoli::all();
+        $dokters = dokter::all();
 
-        return view('dasboard/jadwal.jadwaldokter', compact('jadwals', 'polis'));
+        return view('dasboard/jadwal.jadwaldokter', compact('jadwals', 'polis', 'dokters'));
     }
 
     public function savejadwal(Request $request)
@@ -39,7 +41,8 @@ class JadwaldokterController extends Controller
     {
         $jadwals = jadwaldokter::find($id);
         $polis = ListPoli::all();
-        return view('dasboard/jadwal.editjadwal',compact('jadwals', 'polis'));
+        $dokters = dokter::all();
+        return view('dasboard/jadwal.editjadwal',compact('jadwals', 'polis', 'dokters'));
     }
 
     public function update(Request $request, $id)

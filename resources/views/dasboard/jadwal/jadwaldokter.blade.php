@@ -46,8 +46,13 @@
                       </select>
                     </div>
                     <div class="form-group">
-                        <label for="">Dokter</label>
-                        <input type="text" class="form-control" name="dokter">
+                      <label>Nama Dokter</label>
+                      <select class="form-control select2bs4" name="dokter" style="width: 100%;">
+                        @forelse ($dokters as $dokter)
+                        <option value="{{$dokter->nama_dokter}}">{{$dokter->nama_dokter}}</option>
+                        @empty
+                        @endforelse
+                      </select>
                     </div>
                     <div class="form-group">
                         <label for="">Jam</label>
