@@ -38,7 +38,7 @@
                         <td>
                             <a href="{{route('dokter.edit',['id'=>$dokter->id])}}" class="btn btn-secondary">Edit</a>
                             <a href="#" class="btn btn-success">Detail</a>
-                            <form action="#" method="post">
+                            <form action="{{route('dokter.delete',['id'=>$dokter->id])}}" method="post">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="delete">
                                 <input type="submit" value="Delete" class="btn btn-danger">

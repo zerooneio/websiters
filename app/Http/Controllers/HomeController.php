@@ -20,7 +20,7 @@ class HomeController extends Controller
         $sliders = sliders::all();
         $about = tentangkami::all();
         $beritas = berita::orderBy('tanggal', 'desc')->limit(5)->get();
-        $dokters = dokter::limit(4)->get();
+        $dokters = dokter::all();
         $jadwals =  jadwaldokter::where('hari', '=', now()->isoFormat('dddd'))->get();
         $hariini = Carbon::now()->isoFormat('dddd, D MMM Y');
         return view('page.index', compact('polis', 'sliders', 'beritas', 'about', 'dokters', 'jadwals', 'hariini'));

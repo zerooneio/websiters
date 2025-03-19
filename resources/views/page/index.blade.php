@@ -467,7 +467,7 @@
 
 </section><!-- /Testimonials Section -->
 
-<!-- Doctors Section -->
+{{-- <!-- Doctors Section -->
 <section id="doctors" class="doctors section light-background">
 
   <!-- Section Title -->
@@ -499,7 +499,71 @@
 
   </div>
 
-</section><!-- /Doctors Section -->
+</section><!-- /Doctors Section --> --}}
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>DOKTER</h2>
+    <p>Dokter RS Randegansari Husada</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        @forelse ($dokters as $dokter)
+        <div class="swiper-slide">
+          
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{{ url('/dokter/'.$dokter->gambar) }}" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>{{$dokter->nama_dokter}}</h4>
+                <span>{{$dokter->poli}}</span>
+              </div>
+            </div>
+          
+        </div><!-- End testimonial item -->
+        
+        @empty
+        @endforelse
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
 
 {{-- <!-- Gallery Section -->
 <section id="gallery" class="gallery section">
