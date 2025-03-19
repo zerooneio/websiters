@@ -1,5 +1,8 @@
 @extends('master/dasboard.app')
 @section('head')
+<!-- Select2 -->
+<link rel="stylesheet" href="{{ asset('dasboard/plugins/select2/css/select2.min.css') }}">
+<link rel="stylesheet" href="{{ asset('dasboard/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 @endsection
 
 @section('content')
@@ -26,8 +29,14 @@
                 <input type="text" class="form-control col-md-6" name="nama_dokter" value="{{$dokters->nama_dokter}}">
             </div>
             <div class="form-group">
-                <label for="">Poli</label>
-                <input type="text" class="form-control col-md-6" name="poli" value="{{$dokters->poli}}">
+              <label>Nama Poli</label>
+              <select class="form-control select2bs4" name="poli" style="width: 100%;">
+                <option selected="{{$dokters->poli}}">{{$dokters->poli}}</option>
+                @forelse ($polis as $poli)
+                <option value="{{$poli->nama}}">{{$poli->nama}}</option>
+                @empty
+                @endforelse
+              </select>
             </div>
             <div class="form-group">
                 <label for="">Deskripsi Singkat Dokter</label>
@@ -57,9 +66,20 @@
 @endsection
 @section('js')
 <script src="{{ asset('/dasboard/plugins/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
+<script src="{{ asset('dasboard/plugins/select2/js/select2.full.min.js') }}"></script>
+
 <script>
   $(function () {
     bsCustomFileInput.init();
   });
+</script>
+
+<script>
+  $(function () {  
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+  })
 </script>
 @endsection

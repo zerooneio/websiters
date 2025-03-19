@@ -4,19 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Models\Dokter;
 use Illuminate\Http\Request;
+use App\Models\ListPoli;
 
 class DokterController extends Controller
 {
     public function index()
     {
         $dokters = dokter::all();
+        $polis = ListPoli::all();
 
-        return view('dasboard/dokter.listdokter', compact('dokters'));
+        return view('dasboard/dokter.listdokter', compact('dokters', 'polis'));
     }
 
     public function add()
     {
-        return view('dasboard/dokter.adddokter');
+        $polis = ListPoli::all();
+        return view('dasboard/dokter.adddokter', compact('polis'));
     }
 
     public function savedokter(Request $request)
@@ -45,7 +48,8 @@ class DokterController extends Controller
     public function edit($id)
     {
         $dokters = dokter::find($id);
-        return view('dasboard/dokter.editdokter',compact('dokters'));
+        $polis = ListPoli::all();
+        return view('dasboard/dokter.editdokter',compact('dokters', 'polis'));
     }
 
     public function update(Request $request,$id)
