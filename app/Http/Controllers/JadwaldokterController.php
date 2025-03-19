@@ -4,14 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Jadwaldokter;
+use App\Models\ListPoli;
 
 class JadwaldokterController extends Controller
 {
     public function index()
     {
         $jadwals = jadwaldokter::all();
+        $polis = ListPoli::all();
 
-        return view('dasboard/jadwal.jadwaldokter', compact('jadwals'));
+        return view('dasboard/jadwal.jadwaldokter', compact('jadwals', 'polis'));
     }
 
     public function savejadwal(Request $request)
@@ -36,7 +38,8 @@ class JadwaldokterController extends Controller
     public function edit($id)
     {
         $jadwals = jadwaldokter::find($id);
-        return view('dasboard/jadwal.editjadwal',compact('jadwals'));
+        $polis = ListPoli::all();
+        return view('dasboard/jadwal.editjadwal',compact('jadwals', 'polis'));
     }
 
     public function update(Request $request, $id)
@@ -58,6 +61,13 @@ class JadwaldokterController extends Controller
 
             return redirect(route('jadwal.index'));
         }
+    }
+
+    public function delete($id)
+    {
+        $listpoli = jadwaldokter::destroy($id);
+
+        return redirect(route('jadwal.index'));
     }
 
 }

@@ -86,4 +86,11 @@ class BeritaController extends Controller
         }
     }
 
+    public function delete($id)
+    {
+        $listpoli = berita::destroy($id);
+
+        return redirect(route('berita.list'));
+    }
+
 }

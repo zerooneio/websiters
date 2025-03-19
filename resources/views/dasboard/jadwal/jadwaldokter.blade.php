@@ -37,8 +37,13 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="">Poli</label>
-                        <input type="text" class="form-control" name="poli">
+                      <label>Nama Poli</label>
+                      <select class="form-control select2bs4" name="poli" style="width: 100%;">
+                        @forelse ($polis as $poli)
+                        <option value="{{$poli->nama}}">{{$poli->nama}}</option>
+                        @empty
+                        @endforelse
+                      </select>
                     </div>
                     <div class="form-group">
                         <label for="">Dokter</label>
@@ -87,7 +92,7 @@
                         <td>{{$jadwal->jam}}</td>
                         <td>
                             <a href="{{route('jadwal.edit',['id'=>$jadwal->id])}}" class="btn btn-secondary">Edit</a>
-                            <form action="#" method="post">
+                            <form action="{{route('jadwal.delete',['id'=>$jadwal->id])}}" method="post">
                                 {{ csrf_field() }}
                                 <input type="hidden" name="_method" value="delete">
                                 <input type="submit" value="Delete" class="btn btn-danger">

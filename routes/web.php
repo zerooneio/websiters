@@ -58,6 +58,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/jadwaldokter/list', [JadwaldokterController::class, 'savejadwal']) ->name('jadwal.savejadwal');
     Route::get('/jadwaldokter/edit/{id}', [JadwaldokterController::class, 'edit']) ->name('jadwal.edit');
     Route::post('/jadwaldokter/edit/{id}', [JadwaldokterController::class, 'update']) ->name('jadwal.update');
+    Route::delete('/jadwaldokter/{id}', [JadwaldokterController::class, 'delete']) ->name('jadwal.delete');
 
     Route::get('/dokter/list', [DokterController::class, 'index']) ->name('dokter.index');
     Route::get('/dokter/add', [DokterController::class, 'add']) ->name('dokter.add');
@@ -72,4 +73,5 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/berita/list', [BeritaController::class, 'saveberita']) ->name('berita.saveberita');
     Route::get('/berita/edit/{id}', [BeritaController::class, 'edit']) ->name('berita.edit');
     Route::put('/berita/edit/{id}', [BeritaController::class, 'update']) ->name('berita.update');    
+    Route::delete('/berita/{id}', [BeritaController::class, 'delete']) ->name('berita.delete');
 });
