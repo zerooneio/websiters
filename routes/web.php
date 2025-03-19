@@ -65,6 +65,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/dokter/list', [DokterController::class, 'savedokter']) ->name('dokter.savedokter');
     Route::get('/dokter/edit/{id}', [DokterController::class, 'edit']) ->name('dokter.edit');
     Route::post('/dokter/edit/{id}', [DokterController::class, 'update']) ->name('dokter.update');
+    Route::delete('/dokter/{id}', [DokterController::class, 'delete']) ->name('dokter.delete');
 
     Route::get('/galery/list', [GaleryController::class, 'index']) ->name('galery.index');
 
