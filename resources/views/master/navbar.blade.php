@@ -3,10 +3,10 @@
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="d-none d-md-flex align-items-center">
-          <i class="bi bi-clock me-1"></i> Senin - Sabtu, 08.00 - 20.00
+          <i class="bi bi-clock me-1"></i> IGD 24 Jam
         </div>
         <div class="d-flex align-items-center">
-          <i class="bi bi-phone me-1"></i> Call Center (031) 7509317
+          <i class="bi bi-phone me-1"></i> Customer Care (031) 7509317
         </div>
       </div>
     </div><!-- End Top Bar -->

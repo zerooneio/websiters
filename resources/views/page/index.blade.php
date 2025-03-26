@@ -66,7 +66,7 @@
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-dna icon"></i></div>
-          <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+          <h4><a href="" class="stretched-link">Caesaria With ERACS</a></h4>
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
         </div>
       </div><!-- End Service Item -->
@@ -790,6 +790,11 @@
 
         
         <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Jam Buka</h4>
+          <ul>
+            <li>IGD : 24 Jam</li>
+            <li>Poliklinik :  Senin - Sabtu</li>
+          </ul>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
         <img src="img/kars.png" alt="">
