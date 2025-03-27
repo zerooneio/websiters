@@ -31,9 +31,111 @@
   </div>
 
 </section><!-- /Hero Section -->
+<!-- Stats Section -->
+
+<section id="stats" class="stats section">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+    <h2>Program Unggulan</h2>
+</div><!-- End Section Title -->
+
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="fas fa-eye flex-shrink-0"></i>
+          <div>
+            <p>Operasi Katarak</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-house-check flex-shrink-0"></i>
+          <div>
+            <p>Home Visit Pasien Jiwa
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-pc-display-horizontal flex-shrink-0"></i>
+          <div>
+            <p>USG 4D & USG Transvaginal</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-hospital flex-shrink-0"></i>
+          <div>
+            <p>Caesar With ERACS</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-broadcast flex-shrink-0"></i>
+          <div>
+            <p>Rehabilitasi Medik</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-building flex-shrink-0"></i>
+          <div>
+            <p>MCU On-Site</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-house-check flex-shrink-0"></i>
+          <div>
+            <p>HomeCare</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-hospital flex-shrink-0"></i>
+          <div>
+            <p>Klinik Nyeri</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-airplane flex-shrink-0"></i>
+          <div>
+            <p>Klinik Vaksin Internasional</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Stats Section -->
+
+
+
+
 
 <!-- Featured Services Section -->
-<section id="featured-services" class="featured-services section">
+<!--tion id="featured-services" class="featured-services section">
 
   <div class="container">
 
@@ -47,7 +149,7 @@
         </div>
       </div><!-- End Service Item -->
 
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+      <!-- class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-pills icon"></i></div>
           <h4><a href="" class="stretched-link">Home Visit Pasien Jiwa</a></h4>
@@ -55,7 +157,7 @@
         </div>
       </div><!-- End Service Item -->
 
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+     <!--v class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-thermometer icon"></i></div>
           <h4><a href="" class="stretched-link">USG 4D & USG Transvaginal</a></h4>
@@ -63,7 +165,7 @@
         </div>
       </div><!-- End Service Item -->
 
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+     <!--v class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-dna icon"></i></div>
           <h4><a href="" class="stretched-link">Caesaria With ERACS</a></h4>
@@ -71,7 +173,7 @@
         </div>
       </div><!-- End Service Item -->
 
-    </div>
+   <!--iv>
 
   </div>
 
