@@ -225,7 +225,7 @@
 </section><!-- /About Section -->
 
 <!-- Stats Section -->
-<section id="stats" class="stats section">
+<!--tion id="stats" class="stats section">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -241,7 +241,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
+ <!-- <div class="col-lg-3 col-md-6">
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <i class="far fa-hospital flex-shrink-0"></i>
           <div>
@@ -251,7 +251,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
+  <!--<div class="col-lg-3 col-md-6">
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <i class="fas fa-flask flex-shrink-0"></i>
           <div>
@@ -261,7 +261,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
+  <!--<div class="col-lg-3 col-md-6">
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <i class="fas fa-award flex-shrink-0"></i>
           <div>
@@ -271,7 +271,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-    </div>
+ <!--/div>
 
   </div>
 
