@@ -31,9 +31,111 @@
   </div>
 
 </section><!-- /Hero Section -->
+<!-- Stats Section -->
+
+<section id="stats" class="stats section">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+    <h2>Program Unggulan</h2>
+</div><!-- End Section Title -->
+
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="fas fa-eye flex-shrink-0"></i>
+          <div>
+            <p>Operasi Katarak</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-house-check flex-shrink-0"></i>
+          <div>
+            <p>Home Visit Pasien Jiwa
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-pc-display-horizontal flex-shrink-0"></i>
+          <div>
+            <p>USG 4D & USG Transvaginal</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-hospital flex-shrink-0"></i>
+          <div>
+            <p>Caesar With ERACS</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-broadcast flex-shrink-0"></i>
+          <div>
+            <p>Rehabilitasi Medik</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-building flex-shrink-0"></i>
+          <div>
+            <p>MCU On-Site</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-house-check flex-shrink-0"></i>
+          <div>
+            <p>HomeCare</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far fa-hospital flex-shrink-0"></i>
+          <div>
+            <p>Klinik Nyeri</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="far bi-airplane flex-shrink-0"></i>
+          <div>
+            <p>Klinik Vaksin Internasional</p>
+          </div>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+  </div>
+
+</section><!-- /Stats Section -->
+
+
+
+
 
 <!-- Featured Services Section -->
-<section id="featured-services" class="featured-services section">
+<!--tion id="featured-services" class="featured-services section">
 
   <div class="container">
 
@@ -42,36 +144,36 @@
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-heartbeat icon"></i></div>
-          <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+          <h4><a href="" class="stretched-link">Operasi Katarak</a></h4>
           <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
         </div>
       </div><!-- End Service Item -->
 
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+      <!-- class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-pills icon"></i></div>
-          <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
+          <h4><a href="" class="stretched-link">Home Visit Pasien Jiwa</a></h4>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
         </div>
       </div><!-- End Service Item -->
 
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+     <!--v class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-thermometer icon"></i></div>
-          <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
+          <h4><a href="" class="stretched-link">USG 4D & USG Transvaginal</a></h4>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
         </div>
       </div><!-- End Service Item -->
 
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+     <!--v class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
         <div class="service-item position-relative">
           <div class="icon"><i class="fas fa-dna icon"></i></div>
-          <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+          <h4><a href="" class="stretched-link">Caesaria With ERACS</a></h4>
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
         </div>
       </div><!-- End Service Item -->
 
-    </div>
+   <!--iv>
 
   </div>
 
@@ -123,7 +225,7 @@
 </section><!-- /About Section -->
 
 <!-- Stats Section -->
-<section id="stats" class="stats section">
+<!--tion id="stats" class="stats section">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -139,7 +241,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
+ <!-- <div class="col-lg-3 col-md-6">
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <i class="far fa-hospital flex-shrink-0"></i>
           <div>
@@ -149,7 +251,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
+  <!--<div class="col-lg-3 col-md-6">
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <i class="fas fa-flask flex-shrink-0"></i>
           <div>
@@ -159,7 +261,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-md-6">
+  <!--<div class="col-lg-3 col-md-6">
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <i class="fas fa-award flex-shrink-0"></i>
           <div>
@@ -169,7 +271,7 @@
         </div>
       </div><!-- End Stats Item -->
 
-    </div>
+ <!--/div>
 
   </div>
 
@@ -700,14 +802,14 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p></p>
   </div><!-- End Section Title -->
 
   <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
     <iframe style="border:0; width: 100%; height: 370px;" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=rs randegan sari husada&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div><!-- End Google Maps -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <!--<div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="row gy-4">
       <div class="col-lg-12 ">
@@ -718,7 +820,7 @@
               <p>Jl. Telapak, RT.2/RW.1, Randegansari, Kec. Driyorejo, Kabupaten Gresik, Jawa Timur 61177</p>
             </div>
           </div><!-- End Info Item -->
-          <div class="row">
+   <!--       <div class="row">
             <div class="col-md-6">
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone"></i>
@@ -727,7 +829,7 @@
               </div>
             </div><!-- End Info Item -->
   
-            <div class="col-md-6">
+    <!--        <div class="col-md-6">
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope"></i>
                 <h3>Email</h3>
@@ -736,11 +838,86 @@
             </div>
           </div>
           <!-- End Info Item -->
-      </div>
+    <!--  </div>-->
 
     </div>
 
   </div>
 
 </section><!-- /Contact Section -->
+
+<footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Alamat</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Telapak, RT.2/RW.1, Randegansari, Kec. Driyorejo </p>
+            <p>Kabupaten Gresik, Jawa Timur 61177</p>
+            <p class="mt-3"><strong>No Telpon:</strong> <span>(031) 7509317</span></p>
+            <p><strong>E-mail:</strong> <span>rsrandegansari@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/randegansari.husada"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/rsrandegansarihusada/"><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Program Unggulan</h4>
+          <ul>
+            <li><a href="#">Operasi Katarak</a></li>
+            <li><a href="#">Home Visit Pasien Jiwa</a></li>
+            <li><a href="#">USG 4D & USG Transvaginal</a></li>
+            <li><a href="#">Caesaria With ERACS</a></li>
+            <li><a href="#">Rehabilitasi Medik</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <br></br>
+          <ul>
+            <li><a href="#">MCU On-Site</a></li>
+            <li><a href="#">HomeCare</a></li>
+            <li><a href="#">Klinik Nyeri</a></li>
+            <li><a href="#">Klinik Vaksin Internasional</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Jam Buka</h4>
+          <ul>
+            <li>IGD : 24 Jam</li>
+            <li>Poliklinik :  Senin - Sabtu</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+        <img src="img/kars.png" alt="">
+        </div>
+
+        
+
+        
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Rsrandegansari</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      </div>
+    </div>
+    
+  </footer>
 @endsection
